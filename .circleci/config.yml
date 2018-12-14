@@ -11,7 +11,7 @@ jobs:
           name: Unit Tests
           command: |
             mkdir junit
-            npm test > junit/tests.xml
+            npm run --silent test > junit/tests.xml
           when: always
       - store_test_results:
           path: junit
