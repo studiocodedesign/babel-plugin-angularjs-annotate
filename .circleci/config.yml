@@ -1,0 +1,19 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: npm ci
+      - run: 
+          name: Unit Tests
+          command: |
+            mkdir junit
+            npm test > junit/tests.xml
+          when: always
+      - store_test_results:
+          path: junit
+
+    
