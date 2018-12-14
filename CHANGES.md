@@ -1,5 +1,12 @@
 # babel-plugin-angularjs-annotate changelog
 
+## 0.10.0 2018-12-13
+ * Upgrade to Babel 7 (thanks @pioug!)
+
+## 0.9.0 2018-05-20
+ * New Feature: Support directive definition in variable (#36, Thanks @noppa!)
+ * New Feature: Support `@ngInject` in a multiline comment (#32 & #37, Thanks @sbrunner and @kamilbrk!)
+
 ## 0.8.2 2017-09-26
  * bugfix: Fix issue w/ `$inject` hoisting and nested injected blocks (#29)
 
